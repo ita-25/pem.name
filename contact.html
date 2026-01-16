@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Paul Ejime Mormah for web development, graphics design, and writing services.">
+    <title>Contact | Get in Touch with Paul Ejime Mormah</title>
+    
+    <!-- Same head content -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header (Same structure) -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">PEM</span>
+                    <span class="logo-subtext">tech</span>
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="contact.html" class="btn-contact active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Get in Touch</h1>
+            <p class="page-subtitle">Let's discuss your project and how I can help bring your ideas to life</p>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-info-grid">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>pem@gmail.com</p>
+                    <a href="mailto: paulejimemormah@gmail.com" class="info-link">Send Email</a>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>08161202291</p>
+                    <a href="tel:+2348161202291" class="info-link">Call Now</a>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Location</h3>
+                    <p>Lagos, Nigeria</p>
+                    <p class="info-note">Available for remote work worldwide</p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Response Time</h3>
+                    <p>Within 24 Hours</p>
+                    <p class="info-note">I strive to respond to all inquiries promptly</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-container">
+                <h2 class="section-title">Send a Message</h2>
+                <p class="form-intro">Fill out the form below, and I'll get back to you as soon as possible.</p>
+                
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Your full name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Service Interested In</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service</option>
+                            <option value="web">Web Development</option>
+                            <option value="graphics">Graphics Design</option>
+                            <option value="writing">Professional Writing</option>
+                            <option value="tutoring">Web Development Tutoring</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="budget">Project Budget Range</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select budget range</option>
+                            <option value="under-50k">Under ₦50,000</option>
+                            <option value="50k-100k">₦50,000 - ₦100,000</option>
+                            <option value="100k-200k">₦100,000 - ₦200,000</option>
+                            <option value="200k-plus">₦200,000+</option>
+                            <option value="discuss">Need to discuss</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Project Details *</label>
+                        <textarea id="message" name="message" required rows="6" placeholder="Describe your project requirements, timeline, and any other important details..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="attachment">Attachment (Optional)</label>
+                        <input type="file" id="attachment" name="attachment" accept=".pdf,.doc,.docx,.jpg,.png,.zip">
+                        <small class="file-note">Max file size: 10MB. Accepted: PDF, DOC, JPG, PNG, ZIP</small>
+                    </div>
+                    
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        <p class="form-note">* Required fields must be filled</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What is your typical response time?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>I typically respond to inquiries within 24 hours. For urgent projects, you can mention this in your message, and I'll prioritize your request.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you work with clients outside Nigeria?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, I work with clients worldwide. All my services are delivered remotely, and I'm comfortable working across different time zones.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What payment methods do you accept?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>I accept various payment methods including bank transfers (Nigeria), PayPal, and cryptocurrency. Payment terms are usually 50% upfront and 50% upon completion.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How long does a typical web development project take?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Timelines vary based on project complexity. A simple website takes 1-2 weeks, while more complex applications can take 4-8 weeks. I'll provide a detailed timeline during our consultation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you provide revisions or maintenance after project completion?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, I include a revision period after project delivery. For ongoing maintenance, I offer monthly or annual maintenance packages based on your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PEM Portfolio</h3>
+                    <p>Professional portfolio of Paul Ejime Mormah - Web Developer, Graphics Designer, and Professional Writer.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#web">Web Development</a></li>
+                        <li><a href="services.html#graphics">Graphics Design</a></li>
+                        <li><a href="services.html#writing">Professional Writing</a></li>
+                        <li><a href="services.html#tutoring">Tutoring</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <a href="mailto: paulejimemormah@gmail.com"><li><i class="fas fa-envelope"></i> pem@gmail.com</li></a>
+                        <a href="tel: 08161202291"><li><i class="fas fa-phone"></i> +2348161202291</li></a>
+                      <a href="index.html">  <li><i class="fas fa-globe"></i> www.pem.name.ng</li></a>
+                    </ul>
+                </div>
+                 <!-- Replace Font Awesome with Bootstrap icons -->
+                <div class="social-icons">
+    <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+        <i class="bi bi-github"></i>
+    </a>
+    <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn">
+        <i class="bi bi-linkedin"></i>
+    </a>
+     <a href="https://facebook.com/in/yourusername" target="_blank" aria-label="Facebook">
+        <i class="bi bi-facebook"></i>
+    </a>
+     <a href="https://instagram.com/in/yourusername" target="_blank" aria-label="Instagram">
+        <i class="bi bi-instagram"></i>
+    </a>
+     <a href="https://x.com/in/yourusername" target="_blank" aria-label="Twitter">
+        <i class="bi bi-twitter"></i>
+    </a>
+    <!-- etc. -->
+</div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Paul Ejime Mormah. All rights reserved.</p>
+                <p class="footer-verse">"I can do all things through Christ who strengthens me." - Philippians 4:13</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
