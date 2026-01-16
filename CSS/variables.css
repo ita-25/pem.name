@@ -1,0 +1,53 @@
+:root {
+    /* Color Palette - Professional, Trustworthy, Classic */
+    --primary-color: #2563eb;     /* Professional Blue */
+    --secondary-color: #1e293b;   /* Dark Navy */
+    --accent-color: #f59e0b;      /* Warm Gold */
+    --text-color: #334155;
+    --light-text: #64748b;
+    --background: #ffffff;
+    --light-bg: #f8fafc;
+    --dark-bg: #0f172a;
+    --border-color: #e2e8f0;
+    
+    /* Trust Colors */
+    --trust-color: #10b981;       /* Green for Trust */
+    --professional-color: #3b82f6; /* Blue for Professionality */
+    --reliable-color: #8b5cf6;    /* Purple for Reliability */
+    
+    /* Typography */
+    --font-primary: 'Inter', sans-serif;
+    --font-secondary: 'Playfair Display', serif;
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 4rem;
+    
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 16px;
+    --radius-full: 9999px;
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+    --shadow-lg: 0 10px 25px rgba(0,0,0,0.1);
+    
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+}
+
+/* Dark Mode Variables (for future implementation) */
+[data-theme="dark"] {
+    --background: #0f172a;
+    --text-color: #f1f5f9;
+    --light-text: #cbd5e1;
+    --light-bg: #1e293b;
+    --border-color: #334155;
+}
