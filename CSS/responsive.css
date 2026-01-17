@@ -278,3 +278,32 @@ body.loaded .hero-content {
         background-color: var(--light-bg);
     }
 }
+
+
+/* Profile Image Responsive */
+@media (max-width: 768px) {
+    .image-wrapper {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .profile-photo {
+        object-position: center 25%; /* Adjust focus if needed */
+    }
+    
+    .image-badge {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-wrapper {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .profile-image {
+        border: 3px solid white;
+    }
+}
