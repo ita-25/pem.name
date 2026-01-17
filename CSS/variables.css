@@ -1,53 +1,92 @@
 :root {
-    /* Color Palette - Professional, Trustworthy, Classic */
-    --primary-color: #2563eb;     /* Professional Blue */
-    --secondary-color: #1e293b;   /* Dark Navy */
-    --accent-color: #f59e0b;      /* Warm Gold */
-    --text-color: #334155;
-    --light-text: #64748b;
-    --background: #ffffff;
-    --light-bg: #f8fafc;
-    --dark-bg: #0f172a;
-    --border-color: #e2e8f0;
+    /* ====== COLOR PALETTE ====== */
+    /* Primary Colors */
+    --primary-color: #2563eb;           /* Professional Blue */
+    --primary-light: #3b82f6;          /* Lighter Blue */
+    --primary-dark: #1d4ed8;           /* Darker Blue */
+    
+    /* Secondary Colors */
+    --secondary-color: #1e293b;         /* Dark Navy */
+    --secondary-light: #334155;         /* Lighter Navy */
+    
+    /* Accent Colors */
+    --accent-color: #f59e0b;            /* Warm Gold */
+    --accent-light: #fbbf24;            /* Lighter Gold */
     
     /* Trust Colors */
-    --trust-color: #10b981;       /* Green for Trust */
-    --professional-color: #3b82f6; /* Blue for Professionality */
-    --reliable-color: #8b5cf6;    /* Purple for Reliability */
+    --trust-color: #10b981;             /* Green for Trust */
+    --professional-color: #3b82f6;      /* Blue for Professionality */
+    --reliable-color: #8b5cf6;          /* Purple for Reliability */
     
-    /* Typography */
+    /* ====== BACKGROUND COLORS ====== */
+    /* Main Background - Warm Neutral */
+    --background: #f9fafb;              /* Warm light gray */
+    --light-bg: #f3f4f6;               /* Slightly warmer gray */
+    --card-bg: #ffffff;                /* Pure white for cards/sections */
+    --dark-bg: #111827;                /* Almost black with blue undertone */
+    --section-bg: #ffffff;             /* White for content sections */
+    
+    /* ====== TEXT COLORS ====== */
+    --text-color: #374151;             /* Main text - Dark gray */
+    --text-light: #6b7280;             /* Lighter text */
+    --text-dark: #111827;              /* Very dark text for contrast */
+    --text-on-dark: #f9fafb;           /* Text on dark backgrounds */
+    --text-on-primary: #ffffff;        /* Text on primary color */
+    
+    /* ====== UI COLORS ====== */
+    --border-color: #d1d5db;           /* Border color */
+    --border-light: #e5e7eb;           /* Lighter border */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Shadow color */
+    
+    /* ====== TYPOGRAPHY ====== */
     --font-primary: 'Inter', sans-serif;
     --font-secondary: 'Playfair Display', serif;
+    --font-mono: 'SF Mono', Monaco, 'Cascadia Code', monospace;
     
-    /* Spacing */
+    /* ====== SPACING ====== */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 2rem;
     --spacing-lg: 3rem;
     --spacing-xl: 4rem;
+    --spacing-xxl: 6rem;
     
-    /* Border Radius */
+    /* ====== BORDER RADIUS ====== */
     --radius-sm: 4px;
     --radius-md: 8px;
-    --radius-lg: 16px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-xxl: 24px;
     --radius-full: 9999px;
     
-    /* Shadows */
-    --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
-    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
-    --shadow-lg: 0 10px 25px rgba(0,0,0,0.1);
+    /* ====== SHADOWS ====== */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
     
-    /* Transitions */
-    --transition-fast: 0.2s ease;
-    --transition-normal: 0.3s ease;
-    --transition-slow: 0.5s ease;
+    /* ====== TRANSITIONS ====== */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* ====== Z-INDEX ====== */
+    --z-dropdown: 1000;
+    --z-sticky: 1020;
+    --z-fixed: 1030;
+    --z-modal: 1040;
+    --z-popover: 1050;
+    --z-tooltip: 1060;
 }
 
-/* Dark Mode Variables (for future implementation) */
+/* Dark Mode Variants (for future implementation) */
 [data-theme="dark"] {
     --background: #0f172a;
-    --text-color: #f1f5f9;
-    --light-text: #cbd5e1;
     --light-bg: #1e293b;
+    --card-bg: #1e293b;
+    --text-color: #e2e8f0;
+    --text-light: #94a3b8;
     --border-color: #334155;
+    --shadow-color: rgba(0, 0, 0, 0.3);
 }
