@@ -1,3 +1,25 @@
+<!-- Quick test to see all backgrounds -->
+<div style="display: grid; gap: 20px; padding: 20px;">
+    <div style="background: var(--background); padding: 20px; border-radius: 8px;">
+        Body Background (#f9fafb)
+    </div>
+    <div style="background: var(--light-bg); padding: 20px; border-radius: 8px;">
+        Light BG (#f3f4f6)
+    </div>
+    <div style="background: var(--card-bg); padding: 20px; border-radius: 8px; border: 1px solid var(--border-color);">
+        Card BG (#ffffff)
+    </div>
+    <div style="background: var(--primary-color); color: white; padding: 20px; border-radius: 8px;">
+        Primary Blue (#2563eb)
+    </div>
+    <div style="background: var(--accent-color); color: var(--secondary-color); padding: 20px; border-radius: 8px;">
+        Accent Gold (#f59e0b)
+    </div>
+</div>
+
+
+
+
 /* Reset & Base Styles */
 * {
     margin: 0;
