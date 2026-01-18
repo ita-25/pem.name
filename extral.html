@@ -1,0 +1,31 @@
+If You Don't Have a Professional Photo Yet:
+Use this placeholder while you get one:
+
+html
+<div class="profile-image placeholder-image">
+    <div class="initials">PEM</div>
+    <p class="placeholder-text">Your Photo Here</p>
+</div>
+Add this CSS:
+
+css
+.placeholder-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+.initials {
+    font-family: var(--font-secondary);
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.placeholder-text {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
