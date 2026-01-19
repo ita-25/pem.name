@@ -147,7 +147,7 @@ body {
     align-items: center;
     gap: 0.5rem;
     background-color: white;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     padding: 0.6rem 1.5rem;
     border-radius: var(--radius-full);
     text-decoration: none;
@@ -157,7 +157,7 @@ body {
 }
 
 .btn-view:hover {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: white;
     transform: translateY(-2px);
 }
