@@ -19,6 +19,7 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="CSS/variables.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/add.css">
     <link rel="stylesheet" href="CSS/responsive.css">
     
    <!-- Bootstrap Icons -->
@@ -168,85 +169,132 @@
         </div>
     </section>
 
-    <!-- Featured Projects -->
-    <section class="featured-projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div
-                         <picture>
-                            <!-- WebP for modern browsers -->
-                            <source srcset="images/projects/web/appliguru.webp" type="image/webp">
-                            <!-- Fallback for older browsers -->
-                            <img 
-                                src="images/projects/web/appliguru.jpg" 
-                                alt="Appliguru.com - Company Web Application Dashboard"
-                                loading="lazy"
-                                width="600"
-                                height="400"
-                            >
-                        </picture>
- class="project-type">Professional</div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Appliguru.com</h3>
-                        <p>Company web application platform</p>
-                        <a href="portfolio.html#appliguru" class="project-link">View Details →</a>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-image">
+      <!-- PEM Studio -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-badge">UI/UX Design</div>
+                    <div class="image-container">
                         <picture>
                             <source srcset="images/projects/web/pemstudio.webp" type="image/webp">
                             <img 
                                 src="images/projects/web/pemstudio.png" 
-                                alt="PEM Studio - Portfolio Design Concept"
+                                alt="PEM Studio - Modern Portfolio Design Concept"
                                 loading="lazy"
-                                width="600"
-                                height="400"
+                                width="400"
+                                height="250"
                             >
                         </picture>
-
-                        <div class="project-type">Graphic Studio Website</div>
-                    </div>
-                    <div class="project-content">
-                        <h3>PEM Studio</h3>
-                        <p>Design and UI concept showcase</p>
-                        <a href="portfolio.html#pemstudio" class="project-link">View Details →</a>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="https://pemstudio.vercel.app" target="_blank" class="btn-view" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="project-card">
-                    <div class="project-image">
-                        <picture>
-                            <source srcset="images/projects/web/frontline.webp" type="image/webp">
-                            <img 
-                                src="images/projects/web/frontling.png" 
-                                alt="Frontline Group of Schools Website - Educational Institution"
-                                loading="lazy"
-                                width="600"
-                                height="400"
-                            >
-                        </picture>
-                        <div class="project-type">Educational Website</div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-category ui-ux">UI/UX Design</span>
+                        <span class="project-year">2023</span>
                     </div>
-                    <div class="project-content">
-                        <h3>Frontline Group Of School, Agbor.</h3>
-                        <p>Educational institution website</p>
-                        <a href="portfolio.html#frontline" class="project-link">View Details →</a>
+                    <h3 class="project-title">PEM Studio</h3>
+                    <p class="project-description">Modern portfolio design concept showcasing clean layouts, responsive design, and user-friendly interfaces.</p>
+                    
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML,CSS and JS</span>
+                        <span class="tech-tag">Responsive</span>
+                        <span class="tech-tag">Modern Design</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="portfolio.html#pemstudio" class="project-link">
+                            <span>View Design Process</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
             
-            <div class="section-cta">
-                <a href="portfolio.html" class="btn btn-primary">View All Projects</a>
+            <!-- IMPTECH Academy -->
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-badge">Tech Academy</div>
+                    <div class="image-container">
+                        <picture>
+                            <source srcset="images/projects/web/imptechacademy.webp" type="image/webp">
+                            <img 
+                                src="images/projects/web/imptechacademy.png" 
+                                alt="IMPTECH Academy - Technology Education Website"
+                                loading="lazy"
+                                width="400"
+                                height="250"
+                            >
+                        </picture>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <a href="https://imptechacademy.vercel.app" target="_blank" class="btn-view" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-category web-dev">Web Development</span>
+                        <span class="project-year">2023</span>
+                    </div>
+                    <h3 class="project-title">IMPTECH Academy</h3>
+                    <p class="project-description">Technology education platform with course catalog, enrollment system, and responsive design for all devices.</p>
+                    
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Vercel</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="portfolio.html#imptech" class="project-link">
+                            <span>View Details</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+        
+        <!-- Project Stats -->
+        <div class="project-stats">
+            <div class="stat-item">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Client Satisfaction</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Services Offered</div>
+            </div>
+        </div>
+        
+        <div class="section-cta">
+            <a href="portfolio.html" class="btn btn-primary">
+                <i class="fas fa-briefcase"></i> View All Projects
+            </a>
+            <a href="contact.html" class="btn btn-secondary">
+                <i class="fas fa-rocket"></i> Start Your Project
+            </a>
+        </div>
+    </div>
+</section>
 
     <!-- Future Skills -->
     <section class="future-skills">
