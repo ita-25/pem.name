@@ -231,28 +231,57 @@ p {
     margin-top: var(--spacing-md);
 }
 
+/* Container section */
 .hero-image {
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: var(--space-md, 2rem 0);
 }
 
+/* Wrapper: Responsive square */
 .image-wrapper {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 1 / 1;
 }
 
+/* Main Profile / Hero Element */
 .profile-image {
-    width: 50%;
-    height: 50%;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    border-radius: var(--radius-lg);
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 8rem;
-    color: white;
-    box-shadow: var(--shadow-lg);
+    
+    /* Background & Aesthetics */
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: var(--radius-lg, 1.5rem);
+    box-shadow: var(--shadow-lg, 0 20px 25px -5px rgba(0, 0, 0, 0.1));
+    
+    /* Responsive Text/Icon Scaling */
+    font-size: clamp(4rem, 15cqi, 7rem);
+    color: #ffffff;
+    
+    /* Smooth hover effect */
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+                box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+
+/* Interactive polish */
+.profile-image:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: var(--shadow-xl, 0 25px 50px -12px rgba(0, 0, 0, 0.25));
+}
+
+/* If replacing text with an actual <img> tag inside */
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
