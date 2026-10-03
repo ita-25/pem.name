@@ -56,8 +56,8 @@
     }
 }
 
-/* Mobile Devices (460px and below) */
-@media (max-width: 460px) {
+/* Mobile Devices (480px and below) */
+@media (max-width: 480px) {
     .container {
         padding: 0 var(--spacing-xs);
     }
